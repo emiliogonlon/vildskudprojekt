@@ -30,10 +30,6 @@ body {
     color: var(--main-white);
 }
 
-h1 {
-    background-image: var(--vildskud-gradient);
-}
-
 h2 {
     font-family: var(--sb-text);
     font-size: 1.5rem;
@@ -52,7 +48,36 @@ h2 {
     font-size: 1rem;
     line-height: 66.5%;
     text-transform: uppercase;
-    color: var(--light-grey);
+    color: var(--main-white);
+    display: inline-flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    font-family: var(--sb-text);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 3%;
+    background-image: var(--vildskud-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#kontakt-burger {
+    display: flex;
+    column-gap: 1.5rem;
+    flex-grow: ;
+}
+
+#burger {
+    background: none;
+    border: none;
 }
 
 /* LIST FRAMES */
