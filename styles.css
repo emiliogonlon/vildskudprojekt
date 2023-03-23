@@ -54,6 +54,8 @@ h2 {
     column-gap: 0.5rem;
     align-items: center;
     font-family: var(--sb-text);
+    background: none;
+    border: none;
 }
 
 header {
