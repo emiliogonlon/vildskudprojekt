@@ -60,6 +60,7 @@ h2 {
 
 header {
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
@@ -104,14 +105,15 @@ header {
 .bannerframe img{
     width: 100%;
     object-fit: cover;
-    z-index: 0;
 }
 
 .bannertekst {
     position: absolute;
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding:15px;
     height: 50%;
-    place-items: bottom;
     bottom: 0;
     background: radial-gradient(150.61% 96.04% at 0% 100%, #000000 0%, rgba(0, 0, 0, 0) 100%);
     border-radius: 0px 0px 5px 5px;
