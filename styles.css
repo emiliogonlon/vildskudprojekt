@@ -65,7 +65,7 @@ header {
     right: 0;
     max-width: 100vw;
     padding: 15px;
-    height: 5vh;
+    height: 35px;
     background-image: var(--vildskud-gradient);
     display: flex;
     align-items: center;
@@ -87,6 +87,23 @@ header {
 #burger {
     background: none;
     border: none;
+}
+
+/* SLIDE GALERI */
+
+.bannerframe {
+    display: block;
+    margin-top: 40px;
+    width: 100%;
+    height: 60vh;
+}
+
+.bannerframe img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /* LIST FRAMES */
