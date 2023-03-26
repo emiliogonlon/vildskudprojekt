@@ -168,14 +168,20 @@ header {
   display: none;
 }
 
-#carrousel {
-  list-style: none;
-  padding: 0;
-  padding-right: 15px;
-  display: flex;
-  max-height: 60vh;
-  width: max-content;
-  gap: 5px;
+.carrousel {
+    list-style: none;
+    padding: 0;
+    padding-right: 15px;
+    display: flex;
+    flex-flow: row;
+    max-height: 60vh;
+    width: max-content;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.bannertekst::after {
+    color: inherit;
 }
 
 .bannerframe {
@@ -187,25 +193,23 @@ header {
   border-radius: 5px;
 }
 
-.bannerframe img {
-  width: 100%;
-  object-fit: cover;
+.bannerframe img{
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .bannertekst {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  padding: 15px;
-  height: 50%;
-  bottom: 0;
-  background: radial-gradient(
-    150.61% 96.04% at 0% 100%,
-    #000000 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  border-radius: 0px 0px 5px 5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding:15px;
+    height: 50%;
+    bottom: 0;
+    background: radial-gradient(150.61% 96.04% at 0% 100%, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 0px 0px 5px 5px;
+    color: var(--main-white);
 }
 
 .bannertekst h3,
