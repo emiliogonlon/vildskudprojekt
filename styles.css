@@ -147,11 +147,12 @@ header {
     display: none;
 }
 
-#carrousel {
+.carrousel {
     list-style: none;
     padding: 0;
     padding-right: 15px;
     display: flex;
+    flex-flow: row;
     max-height: 60vh;
     width: max-content;
     gap: 5px;
