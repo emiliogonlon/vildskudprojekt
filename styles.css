@@ -154,6 +154,20 @@ h3 {
     text-transform: uppercase;
 }
 
+.stortekstknap {
+    display: flex;
+    width: fit-content;
+    width: -webkit-fit-content;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--sb-text);
+    text-decoration: none;
+    color: var(--light-grey);
+    font-size: larger;
+    margin-left: 0.5em;
+}
+
 /* LIST FRAMES */
 
 .lf-frame {
