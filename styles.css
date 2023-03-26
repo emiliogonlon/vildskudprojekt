@@ -172,6 +172,50 @@ h3 {
     margin-left: 0.5em;
 }
 
+.heroknap {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    max-width: 30em;
+    /* margin: 10px; */
+    margin-top: 1rem;
+    height: 2.5em;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    font-family: var(--sb-text);
+    color: var(--main-white);
+    font-size: x-large;
+    text-transform: uppercase;
+    justify-content: space-between;
+    letter-spacing: .05em;
+    padding-left: 10px;
+    padding-right: 10px;
+    animation: 3s ease-in-out infinite herogradient;
+    transition: ease-in-out;
+    background: var(--vildskud-gradient);
+    background-size: 200% 200%;
+    -webkit-animation: herogradient 31s ease infinite;
+    -moz-animation: herogradient 31s ease infinite;
+    animation: herogradient 5s ease infinite;
+}
+
+@-webkit-keyframes herogradient {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@-moz-keyframes herogradient {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@keyframes herogradient {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+
 /* LIST FRAMES */
 
 .lf-frame {
