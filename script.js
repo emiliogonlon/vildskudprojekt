@@ -13,18 +13,20 @@ fetch('https://vildskud-9634.restdb.io/rest/forestillinger', {
   data.forEach(function(forestilling) {
     output += `
       <li class="bannerframe">
-        <img src="assets/${forestilling.imageloc}">
-        <div class="bannertekst">
-        <h3 class="bannertitel">
-            ${forestilling.Navn}
-        </h3>
-        <p class="ekstrainfo">
-            ${forestilling.Dato_1}
-        </p>
-        <p>
-            ${forestilling.short}
-        </p>
-        </div>
+        <a href="${forestilling.url}">
+            <img src="assets/${forestilling.imageloc}.avif">
+            <div class="bannertekst">
+            <h3 class="bannertitel">
+                ${forestilling.Navn}
+            </h3>
+            <p class="ekstrainfo">
+                ${forestilling.Dato_1}
+            </p>
+            <p>
+                ${forestilling.short}
+            </p>
+            </div>
+        </a>
     </li>
     `;
   });
