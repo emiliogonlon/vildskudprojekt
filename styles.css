@@ -100,6 +100,10 @@ header {
     padding-left: 23px;
     overflow-x: scroll;
     overscroll-behavior: auto;
+    scrollbar-width: none;
+}
+.carrouselwindow::-webkit-scrollbar {
+    display: none;
 }
 
 #carrousel {
