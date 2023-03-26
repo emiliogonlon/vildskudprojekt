@@ -13,7 +13,7 @@ fetch('https://vildskud-9634.restdb.io/rest/forestillinger', {
   data.forEach(function(forestilling) {
     output += `
       <li class="bannerframe">
-        <img src="assets/9BEF0B3D-169C-4CB1-82BF-C3ED7BC468D8.jpeg" alt="Det levende rum poster">
+        <img src="assets/${forestilling.imageloc}">
         <div class="bannertekst">
         <h3 class="bannertitel">
             ${forestilling.Navn}
