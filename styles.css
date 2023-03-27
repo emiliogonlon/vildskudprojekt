@@ -212,6 +212,10 @@ header {
     color: var(--main-white);
 }
 
+.bannertitel {
+  line-height: 1em;
+}
+
 .bannertekst h3,
 .bannertekst p {
   margin: 0;
