@@ -159,8 +159,8 @@
       <section>
         <h1>Forestillinger</h1>
         <ul id="forestillingerliste">
-          <li>
-            <img src="assets/elbaload.avif" alt="" />
+          <template id="list-template">
+            <img src="assets/elbaload.avif">
             <div class="event-listed">
               <h2>Forestilling</h2>
               <p class="ekstrainfo">15/02/23</p>
@@ -171,7 +171,7 @@
             <svg 
               width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.1516 8L0 0.949585L0.924201 0.0384598L9 8L0.924201 15.9615L0 15.0504L7.1516 8Z" fill="white"/>
             </svg>
-          </li>
+          </template>
         </ul>
     
         <div>
@@ -192,5 +192,40 @@
       <h4>Samarbejdspartnere</h4>
       <h4>Sponsorer</h4>
     </footer> -->
+    <script src="script.js">
+      console.log("helloWorld")
+
+      fetch('https://vildskud-9634.restdb.io/rest/forestillinger', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-apikey': '6420a7ae22634c74fb00b1f5'
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        let output = '<ul id="forestillingerliste">';
+        data.forEach(function(forestilling) {
+          output += `
+            <li id="list-template">
+              <img src="assets/${forestilling.imageloc}.avif">
+              <div class="event-listed">
+                <h2>${forestilling.Navn}</h2>
+                <p class="ekstrainfo">${forestilling.Dato_1}</p>
+                <p>
+                  ${forestilling.short}
+                </p>
+              </div>
+              <svg 
+                width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.1516 8L0 0.949585L0.924201 0.0384598L9 8L0.924201 15.9615L0 15.0504L7.1516 8Z" fill="white"/>
+              </svg>
+            </li>
+          `;
+        });
+        output += '</ul>';
+        document.getElementById('forestillingerliste').innerHTML = output;
+      })
+      .catch(err => console.log(err));
+    </script>
   </body>
 </html>
