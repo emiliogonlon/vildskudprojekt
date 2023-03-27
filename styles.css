@@ -392,6 +392,7 @@ footer img {
 .event-listed h2{
   margin: 0;
   padding-top: 7px;
+  line-height: 1em;
 }
 
 .event-listed p{
