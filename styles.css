@@ -7,6 +7,7 @@
   --orange3: #f25c05;
   --orange4: #f2490c;
   --main-red: #f21b07;
+  --acrylic: #080808af; 
   --vildskud-gradient: linear-gradient(
     267.4deg,
     var(--main-red) -7.58%,
@@ -96,11 +97,11 @@ h2 {
   min-height: 16rem;
   margin: 0;
   padding: 30px;
-  background-color: #080808af;
+  background-color: var(--acrylic);
   justify-content: space-around;
   align-items: end;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
 
 #kontakt ul li {
@@ -346,7 +347,7 @@ h3 {
 }
 
 footer {
-  background-color: #f2490c;
+  background-color: var(--acrylic);
   border-radius: 5px;
   text-align: center;
 }
@@ -402,3 +403,78 @@ footer img {
   overflow-inline: hidden;
   text-overflow: ellipsis;
 }
+
+/* BURGER MENU */
+.sidepanel {
+  height: fit-content;
+  width: 100%; 
+  position: fixed; 
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  transition: 0.5s;
+  background-color: var(--acrylic);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  align-items: end;
+  text-align: right;
+  display: none;
+  flex-flow: column;
+  padding: 20px 0;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--main-white);
+  font-family: var(--sb-text);
+  display: block;
+  transition: 0.3s;
+  }
+
+.sidepanel .closebtn {
+  margin-right: 15px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--main-white);
+  display: inline-flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  font-family: var(--sb-text);
+  background: none;
+  border: none;
+  width: -webkit-fill-available;
+  justify-content: end;
+}
+
+.sidepanel ul {
+  padding-right: 15px;
+  font-size: large;
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  width: -webkit-fill-available;
+}
+
+#sidepanel-bottom {
+  display: flex;
+  flex-flow: column;
+  margin-right: 15px;
+  font-family: var(--md-text);
+  font-size: small;
+}
+
+#so-me {
+  display: flex;
+}
+
+#sidepanel-bottom a {
+  font-family: var(--md-text);
+  font-size: small;
+  text-decoration: underline;
+}
+
+/* SLUT BURGER MENU */
