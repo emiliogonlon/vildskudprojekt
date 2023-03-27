@@ -219,6 +219,11 @@ header {
 
 /* SLIDE GALERI SLUT */
 
+h1 {
+  font-family: var(--sb-text);
+  font-size: xx-large;
+}
+
 h3 {
   font-family: var(--sb-text);
   font-size: 2rem;
@@ -346,5 +351,49 @@ footer img {
   width: 25%;
 }
 
-.lf-title {
+#forestillingerliste {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  gap: .5rem;
+}
+
+#forestillingerliste li {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  grid-template-rows: 100%;
+  background-color: var(--light-grey);
+  height: 7rem;
+  border-radius: 5px;
+  gap: 5px;
+  color: var(--main-grey);
+  overflow: hidden;
+  align-items: center;
+  padding-right: 5px;
+}
+
+#forestillingerliste li img{
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.event-listed {
+  
+  max-height: 100%;
+}
+
+.event-listed h2{
+  margin: 0;
+  padding-top: 7px;
+}
+
+.event-listed p{
+  font-size: small;
+  margin: 0;
+  line-break: strict;
+  overflow-inline: hidden;
+  text-overflow: ellipsis;
 }
