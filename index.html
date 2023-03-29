@@ -298,25 +298,28 @@
                 <img class="partnerbillede" src="assets/sponsor1.avif">
               </a>
               <a class="partnerbox" href="#">
-                <img class="partnerbillede" src="assets/sponsor1.avif">
+                <img class="partnerbillede" src="assets/sponsor2.avif">
               </a>
               <a class="partnerbox" href="#">
-                <img class="partnerbillede" src="assets/sponsor1.avif">
+                <img class="partnerbillede" src="assets/sponsor3.avif">
               </a>
               <a class="partnerbox" href="#">
-                <img class="partnerbillede" src="assets/sponsor1.avif">
+                <img class="partnerbillede" src="assets/sponsor4.avif">
               </a>
               <a class="partnerbox" href="#">
-                <img class="partnerbillede" src="assets/sponsor1.avif">
+                <img class="partnerbillede" src="assets/sponsor5.avif">
               </a>
               <a class="partnerbox" href="#">
-                <img class="partnerbillede" src="assets/sponsor1.avif">
+                <img class="partnerbillede" src="assets/sponsor6.avif">
               </a>
               <a class="partnerbox" href="#">
-                <img class="partnerbillede" src="assets/sponsor1.avif">
+                <img class="partnerbillede" src="assets/sponsor7.avif">
               </a>
               <a class="partnerbox" href="#">
-                <img class="partnerbillede" src="assets/sponsor1.avif">
+                <img class="partnerbillede" src="assets/sponsor8.avif">
+              </a>
+              <a class="partnerbox" href="#">
+                <img class="partnerbillede" src="assets/sponsor9.avif">
               </a>
             <!-- </template> -->
           </div>
@@ -327,7 +330,7 @@
       [FOOTER]
     </footer>
     <script src="script.js"></script>
-    <!-- <script>
+    <script>
       fetch('https://vildskud-9634.restdb.io/rest/forestillinger', {
         method: 'GET',
         headers: {
@@ -362,6 +365,30 @@
         document.getElementById('output').innerHTML = output;
       })
       .catch(err => console.log(err));
-    </script> -->
+
+
+//  SAMARBEJDSPARTNERE INFO FETCHIING - MAN SKAL BETALE FOR AT FÅ ADGANG TIL EN ANDEN RESTDB.IO DATABASE :( 
+      //       fetch('https://vildskud-9634.restdb.io/rest/samarbejdspartnere', {
+      //   method: 'GET',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //     'x-apikey': 'd989e26deb480cd2323bae00b0054361776dd'
+      //   }
+      // })
+      // .then(response => response.json())
+      // .then(data => {
+      //   let sponsorOutput = '<div id="partneregrid">';
+      //   data.forEach(function(sponsor) {
+      //     sponsorOutput += `
+      //       <a class="partnerbox" href="${sponsor.url}" alt="${sponsor.navn}">
+      //         <img class="partnerbillede" src="assets/${sponsor.imageloc}.avif">
+      //       </a>
+      //     `;
+      //   });
+      //   sponsorOutput += '</div>';
+      //   document.getElementById('partneregrid').innerHTML = sponsorOutput;
+      // })
+      // .catch(err => console.log(err));
+    </script>
   </body>
 </html>
